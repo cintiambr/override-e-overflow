@@ -1,0 +1,22 @@
+public class Calculadora {
+
+    public int somar(int a, int b) {
+        return a + b;
+    }
+
+    public int somar(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Calculadora calculadora = new Calculadora();
+
+        int somaDois = calculadora.somar(2, 3);
+        int somaTres = calculadora.somar(1, 2, 3);
+
+        System.out.println("Soma de 2 e 3: " + somaDois);
+        System.out.println("Soma de 1, 2 e 3: " + somaTres);
+    }
+}
