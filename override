@@ -1,0 +1,29 @@
+public class Animal {
+   public String emitirSom() {
+      return "Som genérico de animal";
+   }
+}
+
+public class Cao extends Animal {
+   @Override
+   public String emitirSom() {
+      return "Latido";
+   }
+}
+
+public class Gato extends Animal {
+   @Override
+   public String emitirSom() {
+      return "Miau";
+   }
+}
+
+public class Main {
+   public static void main(String[] args) {
+      Animal meuCao = new Cao();
+      Animal meuGato = new Gato();
+
+      System.out.println("O som do cão: " + meuCao.emitirSom());
+      System.out.println("O som do gato: " + meuGato.emitirSom());
+   }
+}
